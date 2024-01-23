@@ -28,20 +28,16 @@ const exampleObj={
     prop1:'rash',
     prop2: true,
 }
-exampleObj.prop1='John'
-
-type Guitarist={
-    name:string,
-    active?:boolean,
-    albms:(string | number)[]
-
+interface Guitarist{
+    name: string,
+    active?: boolean,
+    albms: (string | number)[]
 }
 
 let evh: Guitarist ={
     name:'john',
     active:true,
     albms:[1789,2128,4773]
-
 }
 let jp: Guitarist ={
     name:'john',
